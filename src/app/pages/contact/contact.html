@@ -1,1 +1,36 @@
-<p>contact works!</p>
+<section class="contact-section">
+    <div class="contact-container">
+        <h2>Contacto</h2>
+        <p class="subtitle">
+            Completá el formulario o escribinos directamente por WhatsApp.
+        </p>
+
+        <form (ngSubmit)="submit()" #contactForm="ngForm">
+            <div class="field">
+                <label>Nombre</label>
+                <input type="text" name="name" required [(ngModel)]="model.name" />
+            </div>
+
+            <div class="field">
+                <label>Email</label>
+                <input type="email" name="email" required [(ngModel)]="model.email" />
+            </div>
+
+            <div class="field">
+                <label>Mensaje</label>
+                <textarea rows="5" name="message" required [(ngModel)]="model.message"></textarea>
+            </div>
+
+            <button type="submit" [disabled]="!contactForm.valid">
+                Enviar mensaje
+            </button>
+        </form>
+
+        <div class="whatsapp-cta">
+            <p>¿Preferís contacto directo?</p>
+            <a href="https://wa.me/5493382419754" target="_blank">
+                Contactar por WhatsApp
+            </a>
+        </div>
+    </div>
+</section>

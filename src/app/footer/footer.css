@@ -1,0 +1,55 @@
+.footer {
+    background-color: #052e16;
+    color: #d1fae5;
+    padding-top: 4rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem 3rem;
+
+    display: grid;
+    gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+}
+
+.footer-brand p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-logo {
+    height: 40px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #a7f3d0;
+}
+
+.footer-links a {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #d1fae5;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #34d399;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(167, 243, 208, 0.2);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+}

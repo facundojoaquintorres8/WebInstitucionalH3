@@ -1,0 +1,47 @@
+.company-section {
+    padding: 5rem 1.5rem;
+    background-color: #f0fdf4;
+}
+
+.company-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+@media (min-width: 768px) {
+    .company-container {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+}
+
+.company-text h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #14532d;
+    margin-bottom: 1.5rem;
+}
+
+.company-text p {
+    color: #374151;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.company-text ul {
+    margin-top: 1.5rem;
+    color: #166534;
+}
+
+.company-text li {
+    margin-bottom: 0.5rem;
+}
+
+.company-image img {
+    border-radius: 1rem;
+    box-shadow: 0 20px 40px rgba(22, 163, 74, 0.25);
+}

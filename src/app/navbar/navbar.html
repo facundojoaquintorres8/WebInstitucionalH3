@@ -1,0 +1,16 @@
+<header class="navbar">
+    <div class="navbar-container">
+        <!-- Logo -->
+        <a routerLink="/" class="logo">
+            <img src="/logos/logo2.jpeg" alt="Logo empresa" class="h-10" />
+        </a>
+
+        <!-- Links -->
+        <nav class="nav-links">
+            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+            <a routerLink="/about" routerLinkActive="active">Nosotros</a>
+            <a routerLink="/products" routerLinkActive="active">Productos</a>
+            <a routerLink="/contact" routerLinkActive="active">Contacto</a>
+        </nav>
+    </div>
+</header>
