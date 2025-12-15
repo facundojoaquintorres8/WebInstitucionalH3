@@ -10,3 +10,22 @@
     transform: translateY(-8px);
     box-shadow: 0 20px 30px rgba(22, 163, 74, 0.25);
 }
+
+.whatsapp-product {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+
+    background-color: #25d366;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    border-radius: 9999px;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.whatsapp-product:hover {
+    background-color: #1ebe5d;
+    transform: translateY(-2px);
+}

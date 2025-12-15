@@ -17,9 +17,26 @@ import { About } from '../about/about';
 export class Home {
 
   images = [
+    '/institutional/banner1.jpeg',
+    '/institutional/banner2.jpeg',
+    '/institutional/banner1.jpeg',
+    '/institutional/banner2.jpeg'
+  ];
+
+  images1 = [
+    '/institutional/banner1.jpeg',
+    '/institutional/banner2.jpeg'
+  ];
+
+  images2 = [
     '/institutional/marca1.jpeg',
     '/institutional/marca2.jpeg',
     '/institutional/marca3.jpeg',
   ];
 
+  images3 = [
+    '/institutional/campo1.jpeg',
+    '/institutional/campo2.jpeg',
+    '/institutional/campo3.jpeg',
+  ];
 }

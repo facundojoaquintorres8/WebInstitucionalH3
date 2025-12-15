@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './products.css',
 })
 export class Products {
+  
   products = [
     {
       name: 'Producto 1',
@@ -51,4 +52,10 @@ export class Products {
       image: '/products/product8.jpeg',
     }
   ];
+
+  public whatsappLink(productName: string): string {
+    const phone = '5493382419754';
+    const message = `Hola, quiero más información sobre el producto: ${productName}`;
+    return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  }
 }
