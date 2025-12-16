@@ -39,4 +39,5 @@ export class Home {
     '/institutional/campo2.jpeg',
     '/institutional/campo3.jpeg',
   ];
+
 }
