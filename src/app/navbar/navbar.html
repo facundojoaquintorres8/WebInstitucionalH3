@@ -1,16 +1,36 @@
-<header class="navbar">
-    <div class="navbar-container">
-        <!-- Logo -->
-        <a routerLink="/" class="logo">
-            <img src="/logos/logo2.jpeg" alt="Logo empresa" class="h-10" />
+<header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+
+        <!-- Logo + Brand -->
+        <a routerLink="/" class="flex items-center gap-3">
+            <img src="/logos/logo2.jpeg" alt="Logo empresa" class="h-10 w-10 object-contain" />
+
+            <div class="leading-tight">
+                <span class="block text-lg font-semibold text-green-800">
+                    H3 Logística de Campo
+                </span>
+                <span class="block text-xs text-green-600">
+                    Coadyuvantes Premium
+                </span>
+            </div>
         </a>
 
         <!-- Links -->
-        <nav class="nav-links">
-            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-            <a routerLink="/about" routerLinkActive="active">Nosotros</a>
-            <a routerLink="/products" routerLinkActive="active">Productos</a>
-            <a routerLink="/contact" routerLinkActive="active">Contacto</a>
+        <nav class="flex gap-6 text-sm font-medium">
+            <a routerLink="/" routerLinkActive="text-green-700" [routerLinkActiveOptions]="{ exact: true }"
+                class="hover:text-green-700 transition">
+                Inicio
+            </a>
+            <a routerLink="/about" routerLinkActive="text-green-700" class="hover:text-green-700 transition">
+                Nosotros
+            </a>
+            <a routerLink="/products" routerLinkActive="text-green-700" class="hover:text-green-700 transition">
+                Productos
+            </a>
+            <a routerLink="/contact" routerLinkActive="text-green-700" class="hover:text-green-700 transition">
+                Contacto
+            </a>
         </nav>
+
     </div>
 </header>

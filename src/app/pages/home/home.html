@@ -2,15 +2,8 @@
     <img *ngFor="let img of images; let i = index" [src]="img"
         class="absolute inset-0 w-full h-full object-cover slider-image" [style.animationDelay]="(-i * 4) + 's'" />
 
-    <div class="relative z-10 flex flex-col items-center justify-center h-full
-             bg-black/40 text-white text-center px-4">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">
-            Coadyuvantes Premium
-        </h1>
-
-        <p class="text-lg max-w-xl mb-6">
-            Soluciones de alta calidad para potenciar el rendimiento agrícola
-        </p>
+    <div class="relative z-10 flex flex-col items-center justify-end h-full
+             bg-black/40 text-white text-center px-4 pb-4">
 
         <a routerLink="/products" class="bg-green-600 hover:bg-green-700 px-6 py-3 rounded-full text-lg transition">
             Ver productos
