@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './whatsapp-button.css',
 })
 export class WhatsappButton {
-  phone = '5493382419754';
+  phone = '5493424064362';
   message = 'Hola, quiero más información sobre sus productos';
 
   get whatsappUrl(): string {
