@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Title, Meta } from '@angular/platform-browser';
 
 export interface IProduct {
   name: string,
@@ -16,15 +15,6 @@ export interface IProduct {
   styleUrl: './products.css',
 })
 export class Products {
-
-  constructor(private title: Title, private meta: Meta) {
-  this.title.setTitle('Productos para fumigación | H3 Logística de Campo');
-
-  this.meta.updateTag({
-    name: 'description',
-    content: 'Conocé los coadyuvantes y agroquímicos de H3 Logística de Campo para optimizar fumigaciones y aplicaciones agrícolas.'
-  });
-}
 
   products: IProduct[] = [
     {
@@ -235,7 +225,7 @@ export class Products {
           check: false
         }
       ],
-      image: './products/8.svg',
+      image: './products/7.svg',
     },
     {
       name: 'Recuperador de Caldo H3',
@@ -265,7 +255,7 @@ export class Products {
           check: false
         }
       ],
-      image: './products/7.svg',
+      image: './products/8.svg',
     }
   ];
 

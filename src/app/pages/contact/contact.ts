@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contact',
@@ -19,19 +18,6 @@ export class Contact {
     email: '',
     message: '',
   };
-
-  constructor(
-    private title: Title,
-    private meta: Meta
-  ) {
-    this.title.setTitle('Contacto | H3 Logística de Campo');
-
-    this.meta.updateTag({
-      name: 'description',
-      content:
-        'Contactá a H3 Logística de Campo para asesoramiento en fumigaciones, agroquímicos y coadyuvantes agrícolas.',
-    });
-  }
 
   async submit() {
     if (this.sending) return;
