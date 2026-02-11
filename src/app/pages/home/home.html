@@ -1,6 +1,8 @@
 <section class="relative h-[80vh] overflow-hidden">
     <img *ngFor="let img of images; let i = index" [src]="img"
-        class="absolute inset-0 w-full h-full object-cover slider-image" [style.animationDelay]="(-i * 4) + 's'" />
+        class="absolute inset-0 w-full h-full object-cover slider-image" 
+        [style.animationDelay]="(-i * 4) + 's'" 
+        alt="Banners home"/>
 
     <div class="relative z-10 flex flex-col items-center justify-end h-full
              bg-black/40 text-white text-center px-4 pb-4">
@@ -11,3 +13,5 @@
     </div>
 
 </section>
+
+<app-about></app-about>
